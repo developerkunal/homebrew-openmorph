@@ -5,21 +5,21 @@
 class Openmorph < Formula
   desc "A tool for transforming and optimizing OpenAPI specifications"
   homepage "https://github.com/developerkunal/OpenMorph"
-  version "0.3.1"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/developerkunal/OpenMorph/releases/download/v0.3.1/openmorph_0.3.1_darwin_amd64.tar.gz"
-      sha256 "89d1c422a1418f128b7314e2f034d0e2a3ef5e790b589118f678b5bb354c1571"
+      url "https://github.com/developerkunal/OpenMorph/releases/download/v0.4.0/openmorph_0.4.0_darwin_amd64.tar.gz"
+      sha256 "3653ded7f58878b2bde3f24a8aa84239fb778d40887f9ecf387711f06d192ff0"
 
       def install
         bin.install "openmorph"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/developerkunal/OpenMorph/releases/download/v0.3.1/openmorph_0.3.1_darwin_arm64.tar.gz"
-      sha256 "94465c84c7090c7eebdffa1d98cf27cbfc9981b938df064bafc6c2a686f5c474"
+      url "https://github.com/developerkunal/OpenMorph/releases/download/v0.4.0/openmorph_0.4.0_darwin_arm64.tar.gz"
+      sha256 "4d6391c268f31c4769b096e494dc22e577f2f8fc099e2d6ea6eafe6a79a1093b"
 
       def install
         bin.install "openmorph"
@@ -29,15 +29,15 @@ class Openmorph < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/developerkunal/OpenMorph/releases/download/v0.3.1/openmorph_0.3.1_linux_amd64.tar.gz"
-      sha256 "7456f12a388887bc526067d4ee566ce6ffb47cdf1e11cd33bd0fab08a904d5d7"
+      url "https://github.com/developerkunal/OpenMorph/releases/download/v0.4.0/openmorph_0.4.0_linux_amd64.tar.gz"
+      sha256 "0a5f5975f591c64c3ccfa5436ebb82e0ef0e80b45196675db6fc646f1da8101a"
       def install
         bin.install "openmorph"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/developerkunal/OpenMorph/releases/download/v0.3.1/openmorph_0.3.1_linux_arm64.tar.gz"
-      sha256 "e3e50592cd33fe3a0b36c0b15fcccdb870a01e957b7878a676e14d5e2f9b3f64"
+      url "https://github.com/developerkunal/OpenMorph/releases/download/v0.4.0/openmorph_0.4.0_linux_arm64.tar.gz"
+      sha256 "b3139f13dc1ac9c745a599d79b820c84e4978f0a6f493142dbd21834caa000a9"
       def install
         bin.install "openmorph"
       end
