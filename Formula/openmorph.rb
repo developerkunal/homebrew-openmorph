@@ -11,7 +11,7 @@ class Openmorph < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/developerkunal/OpenMorph/releases/download/v0.4.0/openmorph_0.4.0_darwin_amd64.tar.gz"
-      sha256 "3653ded7f58878b2bde3f24a8aa84239fb778d40887f9ecf387711f06d192ff0"
+      sha256 "7bb8f4beae42318f83eba9399d0e94c3f002586d38f16691caaf365e50ae0b48"
 
       def install
         bin.install "openmorph"
@@ -19,7 +19,7 @@ class Openmorph < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/developerkunal/OpenMorph/releases/download/v0.4.0/openmorph_0.4.0_darwin_arm64.tar.gz"
-      sha256 "4d6391c268f31c4769b096e494dc22e577f2f8fc099e2d6ea6eafe6a79a1093b"
+      sha256 "0012f2ec68480364071c8d11fe5fbcce99ccfb9ca714f0ae1762073cd2a12e6e"
 
       def install
         bin.install "openmorph"
@@ -30,14 +30,14 @@ class Openmorph < Formula
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
       url "https://github.com/developerkunal/OpenMorph/releases/download/v0.4.0/openmorph_0.4.0_linux_amd64.tar.gz"
-      sha256 "0a5f5975f591c64c3ccfa5436ebb82e0ef0e80b45196675db6fc646f1da8101a"
+      sha256 "89b3c95a2e052a7622217b0f46d70d79ad8160c27c928ce9b6c5c7c58336bbb2"
       def install
         bin.install "openmorph"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
       url "https://github.com/developerkunal/OpenMorph/releases/download/v0.4.0/openmorph_0.4.0_linux_arm64.tar.gz"
-      sha256 "b3139f13dc1ac9c745a599d79b820c84e4978f0a6f493142dbd21834caa000a9"
+      sha256 "60bf9f5531f0b818f7a87d20cb3de8ad03938223b41cf1311a61f008e8855f1f"
       def install
         bin.install "openmorph"
       end
